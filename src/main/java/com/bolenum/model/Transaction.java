@@ -77,6 +77,8 @@ public class Transaction {
 	 */
 	private Long tradeId;
 	
+	private boolean isFetchError=false;
+	
 	private boolean inAppTransaction = false;
 	
 	/**
@@ -403,5 +405,14 @@ public class Transaction {
 	public void setTransferStatus(TransferStatus transferStatus) {
 		this.transferStatus = transferStatus;
 	}
+
+	public boolean isFetchError() {
+		return isFetchError;
+	}
+
+	public void setFetchError(boolean isFetchError) {
+		this.isFetchError = isFetchError;
+	}
+	
 	
 }
